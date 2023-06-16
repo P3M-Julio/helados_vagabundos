@@ -1,0 +1,22 @@
+html 
+    head
+        link(rel="stylesheet", href="./styles/loginAccount.css")
+        title Helados Vagabundos
+    
+    body
+        div(class="center")
+            h1() Login
+
+            form(method="post" action="/loginUser")
+                div(class="chocolate")
+                div(class="CampoDeTexto")
+                    input(type="account" name="user" required)
+                    label() Username 
+                div(class="CampoDeTexto")
+                    input(type="password" name="pass" required)
+                    label() Password
+                input(type="submit" value="Login")
+
+            div(class="CrearCuenta")
+                form(method="post" action="/registerMenu")
+                    input(type="submit" value="Signup")

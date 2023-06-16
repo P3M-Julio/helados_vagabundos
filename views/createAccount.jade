@@ -1,0 +1,27 @@
+html 
+    head
+        link(rel="stylesheet", href="./styles/creteAccount.css")
+        title Helados Vagabundos
+    
+    body
+        div(class="center")
+            h1() Register
+
+            form(method="post" action="/registerUser")
+                div(class="chocolate")
+                div(class="CampoDeTexto")
+                    input(type="account" name="user" required)
+                    label() Username 
+                div(class="CampoDeTexto")
+                    input(type="password" name="pass" required)
+                    label() Password
+                div(class="CampoDeTexto")
+                    input(type="password" name="passConfirm" required)
+                    label() Confirm Password
+                input(type="submit" value="Create Account")
+
+            form(method="post" action="/loginMenu")
+                input(type="submit" value="Login")
+
+            form(method="get" action="/consult")
+                input(type="submit" value="Consult Users")

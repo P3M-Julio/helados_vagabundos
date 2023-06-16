@@ -1,0 +1,47 @@
+body {
+    background-color: #FFF7C0;
+}
+
+.title_text {
+    color:#FF7D97;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60px;
+    padding-left: 60px;
+}
+
+.user_text {
+    color:#FF7D97;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.user_text_r {
+    width: 50%;
+    height: 50%;
+    max-width: 1000%;
+
+    border-radius: 10px;
+    border: 3px solid rgb(197, 197, 197);
+    background-color: white;
+    margin-left: 32px;
+    margin-top: 10px;
+}
+
+.user_img {
+    max-width: 220px;
+    max-height: 220px;
+    border-radius: 10px;
+    border: 6px solid rgb(197, 197, 197);
+    background-color: white;
+}
+
+.button_sesion {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    transition: ease-out 0.5s;
+}
+
+.button_sesion:hover {
+    transform: scale(1.15);
+    transition: 0.5s;
+}

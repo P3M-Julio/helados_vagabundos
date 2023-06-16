@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    body{
+    background-color: #FFF7C0;
+    
+    /*Navegation bar*/
+    
+    }
+    nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items:normal;
+    background-color: #FF7D97;
+    justify-content: space-between;
+    overflow: auto;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+    }
+    ul li {
+    position: relative;
+    margin: 0 10px;
+    list-style: none;
+    display: inline-block;
+    padding: 12px;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    }
+    ul li button{
+      text-decoration: none; 
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0);
+      border: 0px;
+      font-size: 18px;
+      color: #FFF7C0;
+      transition: .25s;
+      padding: 6px;
+      }
+      
+      ul li button:hover {
+      background-color: #FFF7C0;
+      border-radius: 12px;
+      color:#FF7D97;
+      transition: .25s;
+      transform: scale(1.1);
+      }
+           
+      .navigationBarForm {
+      float: left;
+      margin-right: 20px;
+      }
+        
+    /*products*/
+      .products .card{
+        width: 98%;
+        background-color: #FF7D97;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        border-radius: 12px;
+        padding: 5px;
+   
+      }
+      
+        .products .card img{
+          height: 250px;
+          width: 250px;
+          border-radius: 12px;
+      }
+      
+      .products .card{
+        padding: 20px 20px;
+        opacity: 12;
+      }
+
+
+      .center{
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1400px;
+        background: #FF7D97;  
+        padding: 50px 50px;
+        border-radius: 10px;
+        text-decoration: none; 
+        color: #FFF7C0;
+        transition: .25s;
+    }
+
+    .text1{
+      position: relative;
+      margin: 0 10px;
+      padding: 12px;
+      font-size: 18px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      color: #FF7D97;
+      background-color: #FFF7C0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .text2{
+      position: relative;
+      margin: 0 10px;
+      padding: 12px;
+      font-size: 18px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      color: #ff7d97;
+      background-color: #FFF7C0;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+
+    /*posicion de los botones*/
+        
+      .center .box {
+        display: flex;
+        justify-content: space-between;
+        align-items:self-end;
+        padding: 12px;
+      } 
+
+      .center .box .button{
+        font-size: 15px;
+        color: #FF7D97;
+        border: 1px solid #FFF7C0;
+        padding: 10px 18px;
+        border-radius: 10px;
+        background-color: #FFF7C0;
+        transition: .25s;
+      }
+      
+      .center .box .button:hover{
+        cursor: pointer;
+        font-size: 17px;
+        background-color: #FF7D97;
+        border: 3px solid #FFF7C0;
+        color: #FFF7C0;
+        transition: .25s;
+      }
+
+      

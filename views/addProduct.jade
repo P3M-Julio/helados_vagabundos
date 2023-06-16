@@ -1,0 +1,39 @@
+html 
+    head
+        link(rel="stylesheet", href="./styles/addProduct.css")
+        title Helados Vagabundos
+    
+    body
+        nav()
+            img(src="https://static.vecteezy.com/system/resources/previews/014/179/735/original/ice-cream-doodle-png.png" width="80px" height="80px" id=logo alt="Logo image" style="margin-left: 10px;")
+            ul(class="navigationBar")
+                li()
+                    form(method="post" action="/backHome" class="navigationBarForm")
+                        button() Home
+                    form(method="post" action="/accountMenu" class="navigationBarForm")
+                        button() Account
+                    form(method="post" action="/addProductMenu" class="navigationBarForm")
+                        button() Add Product
+        div(class="container")
+            form(method="post" action="/addProduct") 
+                div(class="image")
+                    image(id = "ProductImage" img src="https://media.istockphoto.com/id/1147544807/vector/thumbnail-image-vector-graphic.jpg?s=612x612&w=0&k=20&c=rnCKVbdxqkjlcs3xH87-9gocETqpspHFXu5dIGB4wuM=")
+                
+                div(class="nombre")
+                    label() Image
+                    input(id="image" type="text" placeholder="Image Url" name="imgUrl")
+                
+                div(class="nombre")
+                    label() Name
+                    input(id="name" type="text" placeholder="Product Name" name="name")
+                
+                div(class="precio")
+                    label() Price
+                    input(id="price" type="number"  step="1" min="0" placeholder="Product Price" name="price")
+
+                div(class="sabor")
+                    label() Flavor
+                    input(id="flavor" type="text" placeholder="Flavor(s)" name="flavor")
+
+                div(class="agregar")
+                    input(id="add" type="submit" value="agregar")

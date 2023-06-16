@@ -1,0 +1,33 @@
+html 
+    head
+        link(rel="stylesheet", href="./styles/account.css")
+        title Helados Vagabundos
+    
+    body
+        nav()
+            img(src="https://static.vecteezy.com/system/resources/previews/014/179/735/original/ice-cream-doodle-png.png" width="80px" height="80px" id=logo alt="Logo image" style="margin-left: 10px;")
+            ul(class="navigationBar")
+                li()
+                    form(method="post" action="/backHome" class="navigationBarForm")
+                        button() Home
+                    form(method="post" action="/accountMenu" class="navigationBarForm")
+                        button() Account
+                    form(method="post" action="/addProductMenu" class="navigationBarForm")
+                        button() Add Product
+        div(class="center")
+            div(class="img")
+                img(src=user.img)
+            div(class="text1")
+                label()="Username : " + user.username
+            div(class="text2")
+                label()="Password : " + user.pass
+            
+            div(class="box")
+                form(method="post" action="/deleteMenu")
+                    button(class="button") Delete
+                form(method="post" action="/registerMenu")
+                    button(class="button") Close Sesion 
+                form(method="post" action="/updateAccount")
+                    button(class="button") Change Information 
+
+                          

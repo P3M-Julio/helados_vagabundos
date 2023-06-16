@@ -1,0 +1,21 @@
+html 
+    head
+        title Helados Pedro 
+        link(rel="stylesheet" href="./styles/consults_style.css")
+
+    body
+        div(class="login" id="register")
+            center()
+                h1(class="title_text") Register Users
+
+                form(method="post" action="/registerMenu")
+                    div(class="button_div")
+                        button(class="button_sesion")
+                            img(src="./imgs/logo_door.png" alt="door" width="128px" height="128px")
+
+                div(class="user_text")
+                    each user in userList
+                        div(class="user_text_r")
+                            h2(class="user_name")= user.username
+                                div(class="user_img_r")
+                                    img(src=user.img, alt="userimg" class="user_img")
